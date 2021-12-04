@@ -81,11 +81,10 @@ const part2 = (rawInput: string) => {
       coInput = coInput.filter(l => l[i] === '0')
     }
   }
-  
+
   if (coInput.length === 1) {
     co = coInput[0];
   }
-  console.log(oxygen)
   const coRate = parseInt(co, 2)
   const oxygenRate = parseInt(oxygen, 2)
   return oxygenRate * coRate
